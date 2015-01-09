@@ -1,7 +1,7 @@
 # News & Product Updates section for weekly email reports
 
 ## Prerequisites
-    sudo npm install -g markdown
+    sudo npm install -g markdown jade
     sudo apt-get install xsltproc
 
 Each update is a file called `[mmm]-[dd]-[yyyy].md` in the `updates` directory.
