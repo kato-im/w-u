@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+echo "<div>`md2html updates/jan-05-2015.md`</div>" | xsltproc transform.xslt - | xmllint --format - | tail -n +2 > update-fragment.html
+jade update.jade

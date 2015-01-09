@@ -1,0 +1,81 @@
+doctype strict
+html(xmlns='http://www.w3.org/1999/xhtml')
+  head
+    meta(http-equiv='Content-Type', content='text/html; charset=utf-8')
+    |     
+    meta(name='viewport', content='width=device-width')
+    |     
+    style.
+      <![CDATA[
+      /*----------------------------------------------------------------------------             * Email Client Specific Styles & Resets             *--------------------------------------------------------------------------*/
+      #outlook a {                padding: 0;            }            body{                margin: 0;                min-width: 100%;                padding: 0 0 10px;                width: 100% !important;                -ms-text-size-adjust: 100%;                -webkit-text-size-adjust: 100%;            }            .ExternalClass {                width: 100%;                background-color: #fff ;            }            .ExternalClass,            .ExternalClass p,            .ExternalClass span,            .ExternalClass font,            .ExternalClass td,            .ExternalClass div {                line-height: 100%;            }            .ExternalClass p {                padding-top: 10px !important;            }            #backgroundTable {                line-height: 100% !important;                margin: 0;                padding: 0;                width: 100% !important;            }            img {                display: block;                outline: none;                text-decoration: none;                width: auto;                -ms-interpolation-mode: bicubic;            }            center {                min-width: 0px !important;                width: 100%;            }            a img {                border: none;            }            p {                margin: 0 0 0 10px;            }            table {                border-collapse: collapse;                border-spacing: 0;            }            td {                border-collapse: collapse !important;                word-break: normal;             }            table, tr, td {                padding: 0;                text-align: left;                vertical-align: top;            }            hr {                background-color: #d3d3d4;                border: none;                color: #d3d3d4;                height: 1px;            }
+      /*----------------------------------------------------------------------------             * Structure             *--------------------------------------------------------------------------*/
+      table.body {                height: 100%;                width: 100%;            }            table.container {                margin: 0;                text-align: inherit;                width: 100%;            }            table.main-content {                background-color: #fff;            }            table.row {                padding: 0px;                position: relative;                width: 100%;            }            td.wrapper {                padding: 20px;                position: relative;            }            table.content {                margin: auto;                width: 94%;            }            table.invoice-statement th {                padding-right: 20px;            }
+      /*----------------------------------------------------------------------------             * Alignment Classes             *--------------------------------------------------------------------------*/
+      table.center, td.center {                text-align: center;            }            img.center {                float: none;                margin: 0 auto;            }
+      /*----------------------------------------------------------------------------             * Typography             *--------------------------------------------------------------------------*/
+      body, table.body, h1, h2, h3, h4, h5, h6, p, td {                color: #747474;                font-family: 'Source Sans Pro', sans-serif;                font-weight: normal;                line-height: 1.3;                text-align: left;            }            table.body, h1, h2, h3, h4, h5, h6, p, td {                margin: 0;                padding: 0;            }
+      h1, h2, h3, h4, h5, h6 {              word-break: normal;            }
+      h1 {                font-size: 28px;                font-weight: 300;            }            body, table.body, p {                font-size: 14px;                line-height: 19px;            }            p {                margin: 20px 0;            }            a {                color: #5d85c4;                text-decoration: none;            }            a:hover {                color: #5fa5f8 !important;            }            a:active {                color: #5fa5f8 !important;            }            a:visited {                color: #5d85c4 !important;            }
+      /*----------------------------------------------------------------------------             * Buttons             *--------------------------------------------------------------------------*/
+      a.action-button,            a.action-button:visited,            a.action-button:hover,            a.action-button:active {                color: #fff !important;            }
+      /*----------------------------------------------------------------------------             * Outlook First             *--------------------------------------------------------------------------*/
+      body.outlook p {                display: inline !important;            }
+      /*----------------------------------------------------------------------------             * Media Queries             *--------------------------------------------------------------------------*/
+      @media only screen and (max-width: 600px) {
+      td.wrapper {                    padding: 15px 5px;                }                table[class="main-content"] img {                    height: auto !important;                    width: auto !important;                }                table[class="body"] center {                    min-width: 0 !important;                }                table[class="body"] .container {
+      }                table[class="body"] .row {                    width: 100% !important;                }                table[class="body"] .wrapper {                    display: block !important;                }
+      }
+      ]]>
+  |   
+  body(style="font-family: 'Source Sans Pro', sans-serif;min-width: 100%;width: 100% !important;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;color: #747474;font-weight: normal;line-height: 19px;text-align: left;font-size: 14px;margin: 0;padding: 0 0 10px;")
+    div(style='background-color:#ff4966;')
+      //if gte mso 9
+        v:background(xmlns:v='urn:schemas-microsoft-com:vml', fill='t')
+          v:fill(type='tile', src='https://app.dev07.kato-test.im/img/email/header-lines-v1.png', color='#ff4966')       
+      |       
+      table(width='100%', cellpadding='0', cellspacing='0', border='0', style='border-collapse: collapse;border-spacing: 0;padding: 0;text-align: left;vertical-align: top;')
+        tr(style='padding: 0;text-align: left;vertical-align: top;')
+          td(valign='top', align='left', background='https://app.dev07.kato-test.im/img/email/header-lines-v1.png', style="word-break: normal;padding: 0;text-align: left;vertical-align: top;margin: 0;border-collapse: collapse !important;color: #747474;font-family: 'Source Sans Pro', sans-serif;font-weight: normal;line-height: 1.3;background: #ff4966 url('https://app.dev07.kato-test.im/img/email/header-lines-v1.png') repeat-x center top;")
+            center(style='min-width: 0 !important; width: 100%;')
+              table.container(style='border-collapse: collapse;border-spacing: 0;text-align: inherit;vertical-align: top;margin: 0 auto;padding: 0;height: 51px !important;width: 100%;')
+                tr(style='text-align: left;vertical-align: top;padding: 0;', align='left')
+                  td.wrapper(style="border-collapse: collapse !important;word-break: normal;text-align: right;vertical-align: top;position: relative;line-height: 22px;font-size: 13px;font-weight: 600;margin: 0;padding: 21px 4.9% 0 4.9%;color: #747474;font-family: 'Source Sans Pro', sans-serif;", align='right', valign='top')
+                    a(href='https://dev07.kato-test.im', target='_blank', style='color: #5d85c4;text-decoration: none; float: left')
+                      img(src='https://app.dev07.kato-test.im/img/email/kato-logo.png?v=22', alt='Kato', width='99', height='30', style='display: inherit;float: none;outline: none;text-decoration: none;width: auto;-ms-interpolation-mode: bicubic;margin: 0;border: none;', align='left')
+              |               
+              table.container(style='border-collapse: collapse;border-spacing: 0;text-align: inherit;vertical-align: top;margin: 0 auto;padding: 0;width: 100%;height: 129px !important;')
+                tr(style='text-align: left;vertical-align: top;padding: 0;', align='left')
+                  td.wrapper(style="border-collapse: collapse !important;word-break: normal;text-align: center;vertical-align: top;position: relative;margin: 0;padding: 20px;padding-bottom: 10px;font-size: 28px;line-height: 36px;color: #fff;font-family: 'Source Sans Pro', sans-serif;font-weight: normal;", align='left', valign='top')
+                    div(style='display: inline-block;')
+                      | Weekly Report
+    |     
+    table(height='100%', width='100%', cellpadding='0', cellspacing='0', border='0', style='border-collapse: collapse;border-spacing: 0;width: 100%;padding: 0;text-align: left;vertical-align: top;')
+      tr(style='padding: 0;text-align: left;vertical-align: top;')
+        td(valign='top', align='left', style="word-break: normal;padding: 0;text-align: left;vertical-align: top;margin: 0;border-collapse: collapse !important;color: #747474;font-family: 'Source Sans Pro', sans-serif;font-weight: normal;line-height: 1.3;")
+          table.body(style="border-collapse: collapse;border-spacing: 0;text-align: left;vertical-align: top;height: 100%;width: 100%;line-height: 19px;font-size: 14px;margin: 0;padding: 0;color: #747474;font-family: 'Source Sans Pro', sans-serif;font-weight: normal;")
+            tr(style='text-align: left;vertical-align: top;padding: 0;', align='left')
+              td.center(align='center', valign='top', style="border-collapse: collapse !important;word-break: normal;text-align: center;vertical-align: top;line-height: 19px;font-size: 14px;margin: 0;padding: 0;color: #747474;font-family: 'Source Sans Pro', sans-serif;font-weight: normal;")
+                center(style='min-width: 0 !important; width: 100%;')
+                  table.container.main-content(style='border-collapse: collapse;border-spacing: 0;text-align: inherit;vertical-align: top;background-color: #fff;margin: 0 auto;padding: 0;width: 100%;', bgcolor='#fff')
+                    // begin main content
+                    tr(style='text-align: left;vertical-align: top;padding: 0;', align='left')
+                      td(style="border-collapse: collapse !important;word-break: normal;text-align: left;vertical-align: top;line-height: 19px;font-size: 14px;margin: 0;padding: 0;color: #747474;font-family: 'Source Sans Pro', sans-serif;font-weight: normal;", align='left', valign='top')
+                        table.row(style='border-collapse: collapse;border-spacing: 0;text-align: left;vertical-align: top;position: relative;width: 100% !important;padding: 0px;')
+                          tr(style='text-align: left;vertical-align: top;padding: 0;', align='left')
+                            td.wrapper(style="border-collapse: collapse !important;word-break: normal;text-align: center;vertical-align: top;position: relative;line-height: 19px;font-size: 14px;display: block !important;margin: 0;padding: 15px 5px;color: #747474;font-family: 'Source Sans Pro', sans-serif;font-weight: normal;", align='center', valign='top')
+                              table.content(style='border-collapse: collapse;border-spacing: 0;text-align: left;vertical-align: top;width: 74%;margin: auto;padding: 0;table-layout: fixed;', align='center')
+                                tr(style='text-align: left;vertical-align: top;padding: 0;', align='left')
+                                  td(style="border-collapse: collapse !important;word-break: normal;text-align: left;vertical-align: top;line-height: 19px;font-size: 14px;margin: 0;padding: 0;padding-top: 10px;color: #747474;font-family: 'Source Sans Pro', sans-serif;font-weight: normal;", align='left', valign='top')
+                                    include update-fragment.html
+                                    p(style="line-height: 25px;text-align: left;font-size: 14px;margin: 0;padding: 20px 0;color: #a2a2a2;font-family: 'Source Sans Pro', sans-serif;font-weight: normal;", align='left')
+                                      | Questions? Feedback? Just reply to this email, or use your Kato Support Room. A human will respond.      
+                                      br
+                                      br
+                                      |       Thanks for using Kato Teams!
+                                    |                                     
+                                    p(style="margin: 0;border-top: 1px solid #efefef;text-align: center;font-size: 1px;color: #747474;font-family: 'Source Sans Pro', sans-serif;font-weight: normal;line-height: 19px;padding: 0;") &nbsp;
+                                    |                                     
+                                    p(style="line-height: 12px;text-align: left;font-size: 13px;margin: 0;padding: 0;color: #b9b9b9;font-family: 'Source Sans Pro', sans-serif;font-weight: normal;", align='left')
+                                      | &copy; 2015 Kato.im
+                  // end main content

@@ -1,0 +1,10 @@
+{
+  "name": "wp2gh",
+  "description": "/articles publishable via GH",
+  "dependencies": {
+    "jade": "~1.8.2",
+    "markdown-js": "~0.0.3",
+    "node_xslt": "~0.1.9"
+  },
+  "engine": "node >= 0.8.0"
+}
